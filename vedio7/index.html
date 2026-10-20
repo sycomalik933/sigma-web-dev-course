@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Forms</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="/registor" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">My Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" required><br><br>
+
+
+            <label for="email">Email Adress</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email Adress" required><br><br>
+
+
+            <label for="mob">Mobile Number</label>
+            <input type="tel" name="mob" id="mob" placeholder="Enter Your Mobile Number"><br><br>
+
+
+            <label for="dob">Age</label>
+            <input type="date" name="dob" id="dob" required>
+
+            <p>Gender</p>
+            <input type="radio" name="m" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="f" id="female">
+            <label for="female">Female</label><br><br>
+
+            <label for="city">City Name</label>
+            <select name="city name" id="city">
+             <option value="">--select--</option>
+             <option value="Multan">Multan</option>
+             <option value="Karachi">Karachi</option>
+             <option value="Islamabad">Islamabad</option>
+             <option value="Lahore">Lahore</option></select>
+
+             <p>Skills</p>
+             <input type="checkbox" name="skill" id="skill">
+             <label for="skill">HTML</label>
+             <input type="checkbox" name="skill" id="skill">
+             <label for="skill">CSS</label>
+             <input type="checkbox" name="skill" id="skill">
+             <label for="skill">Javascript</label><br><br>
+
+             <label for="bio">About You</label><br>
+             <textarea name="bio" id="bio" rows="5" cols="35"></textarea><br><br>
+
+             <input type="checkbox" name="terms" id="agree">
+             <label for="agree">Agree to Terms And Conditions</label>
+
+            <button type="button">submit</button>
+            <button type="button">Clear</button>
+            </button>
+        </fieldset>
+    </form>
+</body>
+</html>
